@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace XiongMaiClient
+namespace XiongMaiClient.Forms
 {
-    public partial class Form1 : Form
+    public partial class AddGroupForm : Form
     {
-        public Form1()
+        public AddGroupForm()
         {
             InitializeComponent();
-        }
-
-        private void showManageDeviceForm_Click(object sender, EventArgs e)
-        {
-            Forms.DeviceForm deviceForm = new();
-            deviceForm.Show();            
         }
     }
 }
