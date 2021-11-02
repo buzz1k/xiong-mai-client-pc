@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.GroupListComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -36,15 +36,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // GroupListComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.GroupListComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GroupListComboBox.FormattingEnabled = true;
+            this.GroupListComboBox.Items.AddRange(new object[] {
             "Список устройств"});
-            this.comboBox1.Location = new System.Drawing.Point(150, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 23);
-            this.comboBox1.TabIndex = 0;
+            this.GroupListComboBox.Location = new System.Drawing.Point(150, 24);
+            this.GroupListComboBox.Name = "GroupListComboBox";
+            this.GroupListComboBox.Size = new System.Drawing.Size(265, 23);
+            this.GroupListComboBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -100,10 +101,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.GroupListComboBox);
             this.Name = "AddGroupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление новой группы";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.AddGroupForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +114,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox GroupListComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;

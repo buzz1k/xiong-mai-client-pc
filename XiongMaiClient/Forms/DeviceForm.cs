@@ -16,5 +16,11 @@ namespace XiongMaiClient.Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Forms.AddGroupForm addGroupForm = new();
+            addGroupForm.Show();
+        }
     }
 }

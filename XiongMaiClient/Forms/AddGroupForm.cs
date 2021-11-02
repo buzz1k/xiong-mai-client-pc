@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace XiongMaiClient.Forms
 {
+    
     public partial class AddGroupForm : Form
     {
         public AddGroupForm()
         {
             InitializeComponent();
+        }
+
+        private void AddGroupForm_Load(object sender, EventArgs e)
+        {
+            this.GroupListComboBox.SelectedIndex = 0;
         }
     }
 }
