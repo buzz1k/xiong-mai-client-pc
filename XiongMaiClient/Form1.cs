@@ -20,6 +20,7 @@ namespace XiongMaiClient
         private void showManageDeviceForm_Click(object sender, EventArgs e)
         {
             Forms.DeviceForm deviceForm = new();
+            Enabled = false;
             deviceForm.Show();            
         }
     }

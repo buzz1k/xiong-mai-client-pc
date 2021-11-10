@@ -22,5 +22,10 @@ namespace XiongMaiClient.Forms
             Forms.AddGroupForm addGroupForm = new();
             addGroupForm.Show();
         }
+
+        private void DeviceForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
     }
 }
