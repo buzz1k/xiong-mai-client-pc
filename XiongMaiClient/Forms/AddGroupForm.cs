@@ -22,5 +22,11 @@ namespace XiongMaiClient.Forms
         {
             this.GroupListComboBox.SelectedIndex = 0;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DeviceGroup item = new() { Name = textBoxGroupName.Text};
+            DeviceForm.deviceGroup.Add(item);           
+        }
     }
 }

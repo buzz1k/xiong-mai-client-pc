@@ -12,6 +12,14 @@ namespace XiongMaiClient.Forms
 {
     public partial class DeviceForm : Form
     {
+        public static List<DeviceGroup> deviceGroup = new List<DeviceGroup>();
+
+
+        public static void AddGroupToList()
+        { 
+            
+        }
+
         public DeviceForm()
         {
             InitializeComponent();
@@ -19,7 +27,7 @@ namespace XiongMaiClient.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Forms.AddGroupForm addGroupForm = new();
+            AddGroupForm addGroupForm = new();
             addGroupForm.Show();
         }
 

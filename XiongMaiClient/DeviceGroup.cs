@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XiongMaiClient
 {
-    internal class DeviceGroup
+    public class DeviceGroup
     {
        public string? Name { get; set; }
     }

@@ -31,7 +31,7 @@
             this.GroupListComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxGroupName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,13 +65,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Название группы";
             // 
-            // textBox1
+            // textBoxGroupName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(150, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 23);
-            this.textBox1.TabIndex = 3;
+            this.textBoxGroupName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxGroupName.Location = new System.Drawing.Point(150, 62);
+            this.textBoxGroupName.Name = "textBoxGroupName";
+            this.textBoxGroupName.Size = new System.Drawing.Size(265, 23);
+            this.textBoxGroupName.TabIndex = 3;
             // 
             // button1
             // 
@@ -81,6 +81,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -98,7 +99,7 @@
             this.ClientSize = new System.Drawing.Size(438, 154);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxGroupName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GroupListComboBox);
@@ -117,7 +118,7 @@
         private System.Windows.Forms.ComboBox GroupListComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxGroupName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
